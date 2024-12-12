@@ -1,0 +1,147 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: pink;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    max-width: 600px;
+    grid-auto-rows: 50px;
+  }
+  
+  .day-label {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .today {
+    background-color: #ffcc00;
+  }
+  
+  .has-events {
+    background-color: #90ee90;
+  }
+  
+  .weekend {
+    background-color: #ffb3b3;
+  }
+  
+  .weekday {
+    background-color: #f9f9f9;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button[type='button'] {
+    background-color: #f44336;
+  }
+  .has-events {
+    background-color: #90ee90;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .event-item {
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    z-index: 1;
+  }
+/* Add a white background for newly added events */
+.new-event {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .day.today {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #007bff; /* Blue border */
+    color: #007bff; /* Blue text color */
+    font-weight: bold; /* Bold text */
+  }
+  
+      
